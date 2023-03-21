@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD724_ICE7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sM2-7X-2mY">
+                                <rect key="frame" x="22" y="273" width="348" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UFj-16-NNM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-Ht-8a1">
+                                <rect key="frame" x="22" y="167" width="348" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8DF-fl-Pnr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="JY7-yG-VVl" userLabel="Image">
+                                <rect key="frame" x="49" y="364" width="294" height="265"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="dv6-Ht-8a1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Uv-Qa-tHF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JY7-yG-VVl" secondAttribute="bottom" constant="189" id="8Bf-Qt-tb7"/>
+                            <constraint firstItem="dv6-Ht-8a1" firstAttribute="leading" secondItem="sM2-7X-2mY" secondAttribute="leading" id="IbR-7J-cd9"/>
+                            <constraint firstItem="dv6-Ht-8a1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="LMf-fj-N22"/>
+                            <constraint firstItem="dv6-Ht-8a1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="VMw-Cv-vTW"/>
+                            <constraint firstItem="sM2-7X-2mY" firstAttribute="centerX" secondItem="JY7-yG-VVl" secondAttribute="centerX" id="YED-xj-BcS"/>
+                            <constraint firstItem="dv6-Ht-8a1" firstAttribute="trailing" secondItem="sM2-7X-2mY" secondAttribute="trailing" id="Z3V-fu-Tc4"/>
+                            <constraint firstItem="JY7-yG-VVl" firstAttribute="top" secondItem="sM2-7X-2mY" secondAttribute="bottom" constant="57" id="iag-tP-3FM"/>
+                            <constraint firstItem="sM2-7X-2mY" firstAttribute="top" secondItem="dv6-Ht-8a1" secondAttribute="bottom" constant="46" id="s9K-AA-A3T"/>
+                            <constraint firstItem="JY7-yG-VVl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="zl4-G4-xb1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Image" destination="JY7-yG-VVl" id="uxL-l7-LAo"/>
+                        <outlet property="Label" destination="dv6-Ht-8a1" id="Vgn-fe-T0q"/>
+                        <outlet property="TextField" destination="sM2-7X-2mY" id="yad-fg-kgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="5122" height="3520"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
